@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+        /*1. display inline makes the height width equal to content.*/
+        /*Div acts as an inline element.*/
+        /*height width top bottom margin padding is not allowed*/
+        /*2. display block in div is default as it takes the full space in width*/
+        /*3. display inline block is similar to display inline but it allows to set any */
+        /*height width*/
+        /*4. Display none- Removes element from doc*/
+        .box1{
+            width: 230px;
+            height: 200px;
+            background-color: lightgray;
+            display: inline;
+            margin-top: 23px;
+            margin-left: 24px;
+        }
+        .box2{
+            width: 230px;
+            height: 200px;
+            background-color: gray;
+            display: inline;
+        }
+        .box3{
+            width: 230px;
+            height: 200px;
+            background-color: palevioletred;
+            display: inline-block;
+
+        }
+        .box4{
+            width: 230px;
+            height: 200px;
+            background-color: palevioletred;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+This is div1.</div>
+<div class="box2">
+This is div2.</div>
+<div class="box3">
+    This is div3.
+</div>
+<div class="box4">
+This is div4.</div>
+</body>
+</html>

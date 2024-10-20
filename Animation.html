@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        .c{
+            height: 100vh;
+            width: 100vw;
+            background-color: lemonchiffon;
+        }
+        .b{
+            background-color: palevioletred;
+            height: 200px;
+            width: 200px;
+            animation-name: AnimateWidth;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-iteration-count: 5;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-out;
+        }
+        @keyframes AnimateWidth {
+            from {width: 200px;
+            height: 200px;}
+            to {width: 100vw;
+            height: 100vh;}
+        }
+        @keyframes Animate {
+            /*Used to tell which should be the stateof animation at 0 percent or 50 percent */
+            /*or 100 percent of completion.*/
+            0% {width: 200px;
+                height: 200px;}
+            50% {
+                height: 500px;
+                width: 500px;
+            }
+            100% {width: 100vw;
+                height: 100vh;}
+        }
+    </style>
+
+</head>
+<body>
+<div class="c">
+    <div class="b"></div>
+</div>
+</body>
+</html>

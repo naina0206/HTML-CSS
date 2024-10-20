@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Elements</title>
+    <style>
+        p::first-line{
+            background-color: brown;
+            color: white;
+        }
+        p::first-letter{
+            background-color: blue;
+            color: brown;
+        }
+        p::selection{
+            /*When the text is selected on website, these properties are applied*/
+            color: green;
+            background-color: orange;
+        }
+        h2::after{
+            /*To reduce time complexity for the dom tree, we use after to add some*/
+            /*element or content.*/
+            content: "abc";
+            /*This might not be added in the html or dom tree.*/
+        }
+        h2::before{
+            /*Similar to after, but it adds the content before the element*/
+            content:"abc";
+            font-size: 40px;
+            color: palevioletred;
+            font-family: 'Arial', 'Lucida Sans', 'Lucida Sans Regular';
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+<!--1. First Letter-->
+<!--2. Last Letter-->
+<!--3. Selection-->
+<!--4. Before-->
+<!--5. After -->
+<p> hello hello hello hello hello hello hello hello hello hello
+    hello hello hello hello hello hello hello hello hello hello hello hello
+    hello hello hello hello hello hello hello hello hello hello hello hello hello
+    hello hello hello hello hello hello hello
+</p>
+<h2>This is some heading.</h2>
+</body>
+</html>

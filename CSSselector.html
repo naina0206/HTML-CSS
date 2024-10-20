@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS selectors</title>
+    <style>
+        h1{
+            color: navy;
+        }
+        div{
+            background-color: chocolate;
+            border: 5px solid black;
+        }
+        /*We can also group selectors by using comma in between them.*/
+        .C1,div,h1,h2{
+        }
+        /*We can use element from class or id like*/
+        h1.C1{
+            /*This means that all h1 of class C1 will have the style.*/
+            /*Similarly this can be used for id as well.*/
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            /*This is used as universal selector to select every element.*/
+        }
+
+    </style>
+</head>
+<body>
+<div>
+<h1 class="C1"> This is a new heading.</h1>
+<p> Pollution is the introduction of contaminants into the natural
+    environment that cause adverse change. Pollution can take the form of any
+    substance (solid, liquid, or gas) or energy (such as radioactivity, heat,
+    sound, or light). Pollutants, the components of pollution</p></div>
+<h1> This is another h1.</h1>
+<h2 class="C1">Hey new heading</h2>
+</body>
+</html>

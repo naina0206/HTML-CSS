@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform</title>
+    <style>
+        .container{
+            height: 200px;
+            background-color: blueviolet;
+        }
+        .box{
+            height: 30%;
+            background-color: gray;
+            display: inline;
+            /*transform: translate(20px,40px) rotate(0.5turn);*/
+            /*translate(x axis, y axis) moves the box from orignal position.*/
+            /*Translate moves the box 20px top the right, and 40 px from the orignal position.*/
+            /*The rotate value can be in degree as well.*/
+            /*transform-origin:20% 30%;*/
+            /*transform-origin: x-axis y-axis z-axis*/
+            /*Default is 50% 50%*/
+            /*transform:scaleX(2);*/
+            /*transform: scaleY(2);*/
+            /*transform: scale(2,2);*/
+            /*In place of scalex and scaley, scale is simply used to define the scaling*/
+            /*required in the x axis and y axis.*/
+            transform: skew(4deg, 7deg) rotateX(90deg);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="box"> This is some text.</div>
+</div>
+</body>
+</html>

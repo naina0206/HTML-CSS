@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /*space around-Space around each div.*/
+            /*space between-No gaps in side.*/
+            /*space evenly-All the space are equal.*/
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+        .item{
+            border: 2px solid green;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<!--Flex Box-Flexible Box, layout model-->
+<!--Justify content-Main axis(x axis)-->
+<!--Align content-Cross axis(y axis)-->
+<div class="container">
+    <div class="item">Item1</div>
+    <div class="item">Item2</div>
+    <div class="item">Item3</div>
+    <div class="item">Item4</div>
+    <div class="item">Item5</div>
+</div>
+</body>
+</html>

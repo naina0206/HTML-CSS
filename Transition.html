@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition</title>
+    <style>
+
+        img:hover{
+            /*When hovered over an image*/
+            width: 50vw;
+            height:400px;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+            /*Intial height width should be provided.*/
+            /*transition-property: width;*/
+            /*transition-duration: 5s;*/
+            /*transition-timing-function: linear;*/
+            /*transition-delay: 2s;*/
+            transition: height 5s linear, width 2s ease-out;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="https://tse1.mm.bing.net/th?id=OIP.NOH8bBZLrC_5WpwupOJNkwHaEX&pid=Api&P=0&h=180">
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        .main{
+            border: 2px solid blue;
+            height: 1000vh;
+            width: 90vw;
+        }
+        .container{
+            border:2px solid green;
+            height: 70%;
+            width: 70%;
+            margin: 30px;
+        }
+        .item{
+            border: 2px solid orange;
+            width: 100px;
+            height: 100px;
+            margin: 2px;
+        }
+        #item2{
+            position: relative;
+            left: 120px;
+            /*Moves 65px to left from its orignal position.*/
+            top:100px;
+            /*position: absolute;*/
+            /*left:20px;*/
+            /*This is positioned according to body, as there is no nearest element which is */
+            /*positioned.*/
+        }
+        #item1{
+            /*position: fixed;*/
+            /*top:20px;*/
+            /*This is fixed according to body.Even when its scrolled, the element is fixed.*/
+            position: sticky;
+            top: 40px;
+            /*Element is fixed only inside parent.*/
+        }
+
+    </style>
+</head>
+<body>
+<!--Properties-Static, absolute, relative,fixed, sticky-->
+<!--Static-By default.-->
+<!--Absolute-Element position itself according to its nearest positioned ancestor.-->
+<!--Relative-Element position itself according to orignal position.-->
+<!--Fixed-Element fixed its position on body according to body.-->
+<!--Sticky-Element behave as a fixed element only inside its parent element.-->
+
+<div class="main">
+    <div class="container">
+        <div class="item" id="item1">Item1</div>
+        <div class="item" id="item2">Item2</div>
+        <div class="item" id="item3">Item3</div>
+    </div>
+</div>
+</body>
+</html>
